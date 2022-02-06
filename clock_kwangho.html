@@ -33,7 +33,7 @@ if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyS
 var c;
 setInterval(
 c = function() {
-    output.innerText = moment().format(urlParams["format"] || '');
+    output.innerText = moment().subtract(30, 'minutes').format(urlParams["format"] || '');
 }, 1000);
 c();
 
@@ -41,4 +41,3 @@ c();
 </body>
 </html>
 
-//subtract(30, 'minutes')
