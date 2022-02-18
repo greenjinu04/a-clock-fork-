@@ -33,7 +33,7 @@ if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyS
 var c;
 setInterval(
 c = function() {
-    output.innerText = moment().add(1, 'hours').format(urlParams["format"] || '');
+    output.innerText = moment().format(urlParams["format"] || '');
 }, 1000);
 c();
 
